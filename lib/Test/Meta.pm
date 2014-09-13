@@ -5,6 +5,6 @@ class Test::Meta {
 }
 
 macro test($block) is export {
-    my $code = $block.Str;
+    my $code = $block.Str ~ '()';
     return quasi { Test::Meta.new(:$code) }
 }
