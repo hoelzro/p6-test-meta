@@ -1,0 +1,10 @@
+use v6;
+use Test::Meta;
+use Test;
+
+plan 2;
+
+test({
+    say "1..1";
+    say "ok 1 - seems fine";
+}).ok.name('seems fine');
